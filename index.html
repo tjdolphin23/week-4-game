@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<title>week-4-game</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+
+	<div class="jumbotron">
+  		<h1>CrystalsCollectors!</h1>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-8">
+				 <div id="instructions">
+				 <h6>Instructions</h6>
+				 <br>
+					<p>* You will be given a random number at the start of the game</p>
+				<br>
+					<p>* There are four crystal below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+				<br>
+					<p>* You win the game by matching your total score to random number, you lose the game if your total score goes above the random number</p>
+				<br>
+					<p>* The value of each crystal is hidden from you until you click on it</p>
+				<br>
+					<p>* Each time when the game starts, the game will change the values of each crystals</p>
+				</div>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+	</div>	
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-3">
+				<div id="randomNum">
+				</div>
+			</div>	
+			<div class="col-md-1"></div>
+			<div class="col-md-3">
+				 <div id="scoreboard">
+					<p>Wins</p>
+					<br>
+					<p>Losses</p>
+				</div>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+	</div>	
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-1"></div>
+	 		<div class="col-xs-6 col-md-2 red">
+	    		<a href="#" class="thumbnail">
+	      		<img src="assets/images/red.jpg" alt="red crystal" width="100px" height="100px">
+	    		</a>
+	  		</div>
+			<div class="col-xs-6 col-md-2 blue">
+	    		<a href="#" class="thumbnail">
+	      		<img src="assets/images/blue.jpg" alt="blue crystal" width="100px" height="100px">
+	    		</a>
+	  		</div>
+	  		<div class="col-xs-6 col-md-2 yellow">
+	    		<a href="#" class="thumbnail">
+	      		<img src="assets/images/yellow.jpg" alt="yellow crystal" width="100px" height="100px">
+	    		</a>
+	  		</div>
+	  		<div class="col-xs-6 col-md-2 green">
+	    		<a href="#" class="thumbnail">
+	      		<img src="assets/images/green.jpg" alt="green crystal" width="100px" height="100px">
+	    		</a>
+	  		</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-3">
+				<div id="yourScore">
+					<p>Your total score is:</p>
+				</div>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+	</div>
+
+	 <div class="container">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-3">
+				<div id="total">
+				</div>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+	</div>
+
+</body>
+</html>
